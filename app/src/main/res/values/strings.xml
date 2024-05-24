@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ConversorTemperatura</string>
+    <string name="edit_celsius_placeholder">Insira um valor em °C</string>
+    <string name="btn_convert_text">Converter</string>
+    <string name="label_celsius_text">Valor em Celsius:</string>
+    <string name="label_fahrenheit_text">Valor em Fahrenheit:</string>
+    <string name="nan_error">Digite apenas números.</string>
+    <string name="ellipsis">…</string>
 </resources>

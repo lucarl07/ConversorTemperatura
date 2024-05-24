@@ -8,12 +8,80 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/label_fahrenheit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginStart="80dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/label_fahrenheit_text"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/return_fahrenheit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/return_fahrenheit" />
+
+    <EditText
+        android:id="@+id/edit_celsius"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="@string/edit_celsius_placeholder"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/btn_convert"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_convert"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:text="@string/btn_convert_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/return_celsius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/ellipsis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toEndOf="@+id/label_fahrenheit"
+        app:layout_constraintTop_toBottomOf="@+id/btn_convert" />
+
+    <TextView
+        android:id="@+id/return_fahrenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/ellipsis"
+        android:textAlignment="viewEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toEndOf="@+id/label_fahrenheit"
+        app:layout_constraintTop_toBottomOf="@+id/return_celsius" />
+
+    <TextView
+        android:id="@+id/label_celsius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/label_celsius_text"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/return_celsius"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/return_celsius" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
