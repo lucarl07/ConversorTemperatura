@@ -26,14 +26,14 @@ class MainActivity : AppCompatActivity() {
         }
 
        binding.btnConvert.setOnClickListener {
-           val celsius = binding.editCelsius.text.toString().toDoubleOrNull()
-           binding.returnCelsius.text = "$celsius ºC"
-
-           if (celsius != null) {
+           if (!binding.editCelsius.text.toString().isEmpty()) {
+               val celsius = binding.editCelsius.text.toString().toDouble()
                val fahrenheit = celsius * 1.8 + 32
+
+               binding.returnCelsius.text = "$celsius ºC"
                binding.returnFahrenheit.text = "$fahrenheit ºF"
            } else {
-               binding.returnCelsius.text = getString(R.string.nan_error)
+               binding.returnCelsius.text = getString(R.string.error_empty)
                binding.returnFahrenheit.text = getString(R.string.ellipsis)
            }
        }

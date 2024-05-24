@@ -4,6 +4,6 @@
     <string name="btn_convert_text">Converter</string>
     <string name="label_celsius_text">Valor em Celsius:</string>
     <string name="label_fahrenheit_text">Valor em Fahrenheit:</string>
-    <string name="nan_error">Digite apenas números.</string>
+    <string name="error_empty">Digite um número inteiro ou decimal.</string>
     <string name="ellipsis">…</string>
 </resources>

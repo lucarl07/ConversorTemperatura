@@ -29,7 +29,7 @@
         android:ems="10"
         android:hint="@string/edit_celsius_placeholder"
         android:importantForAutofill="no"
-        android:inputType="text"
+        android:inputType="number|numberDecimal"
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/btn_convert"
         app:layout_constraintEnd_toEndOf="parent"
